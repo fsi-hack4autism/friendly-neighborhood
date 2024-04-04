@@ -27,6 +27,21 @@ def connect_to_database():
 # );
 
 
+# CREATE TABLE ProfileData (
+#     PatientID UNIQUEIDENTIFIER PRIMARY KEY,
+#     Autism_Diagnosis_Summary NVARCHAR(MAX),
+#     ZipCode NVARCHAR(10),
+#     Age INT,
+#     Gender NVARCHAR(10),
+#     Siblings NVARCHAR(100),
+#     Family_Profile NVARCHAR(50),
+#     Connection_Level NVARCHAR(100),
+#     LanguagePreference NVARCHAR(50),
+#     ContactPhoneNumber NVARCHAR(15),
+#     Email NVARCHAR(100),
+#     Connection_Priority NVARCHAR(10)  
+# );
+
 # Function to insert test data into database
 def insert_test_data(data):
     conn = connect_to_database()
@@ -65,7 +80,7 @@ def read_records_from_database():
 
     try:
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM TestData")
+        cursor.execute("SELECT PatientID, Relationship, ZipCode, Age, Gender, Diagnosis, LanguagePreference, Summary, ContactPhoneNumber, Email FROM TestData")
         records = cursor.fetchall()
         return records
     except Exception as e:
@@ -73,3 +88,45 @@ def read_records_from_database():
         return []
     finally:
         conn.close()
+
+def read_profile_data_from_database():
+    conn = connect_to_database()
+    if conn is None:
+        return []
+
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT PatientID, Autism_Diagnosis_Summary, ZipCode, Age, Gender, Siblings, Family_Profile, Connection_Level, LanguagePreference, ContactPhoneNumber, Email, Connection_Priority FROM ProfileData")
+        records = cursor.fetchall()
+        return records
+    except Exception as e:
+        print("Error reading records from database:", e)
+        return []
+    finally:
+        conn.close()
+
+def insert_profile_data_db(profile_data):
+    conn = connect_to_database()
+    if conn is None:
+        return False, "Failed to connect to database"
+
+    try:
+        cursor = conn.cursor()
+        
+        if isinstance(profile_data, list):
+            # Insert multiple records
+            for data in profile_data:
+                cursor.execute("INSERT INTO ProfileData (PatientID, Autism_Diagnosis_Summary, ZipCode, Age, Gender, Siblings, Family_Profile, Connection_Level, LanguagePreference, ContactPhoneNumber, Email, Connection_Priority) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+                               (data['PatientID'], data['Autism_Diagnosis_Summary'], data['ZipCode'], data['Age'], data['Gender'], data['Siblings'], data['Family_Profile'], data['Connection_Level'], data['LanguagePreference'], data['ContactPhoneNumber'], data['Email'], data['Connection_Priority']))
+        else:
+            # Insert single record
+            cursor.execute("INSERT INTO ProfileData (PatientID, Autism_Diagnosis_Summary, ZipCode, Age, Gender, Siblings, Family_Profile, Connection_Level, LanguagePreference, ContactPhoneNumber, Email, Connection_Priority) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
+                           (profile_data['PatientID'], profile_data['Autism_Diagnosis_Summary'], profile_data['ZipCode'], profile_data['Age'], profile_data['Gender'], profile_data['Siblings'], profile_data['Family_Profile'], profile_data['Connection_Level'], profile_data['LanguagePreference'], profile_data['ContactPhoneNumber'], profile_data['Email'], profile_data['Connection_Priority']))
+        
+        conn.commit()
+        return True, "Data inserted successfully"
+    except Exception as e:
+        return False, str(e)
+    finally:
+        conn.close()
+
