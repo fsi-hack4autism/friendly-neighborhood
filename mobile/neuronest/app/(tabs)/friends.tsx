@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native';
 import { Colors } from '../../constants/Colors';
+import { useRouter } from 'expo-router';
 
 // Define interface for Friend type
 interface Friend {
@@ -45,6 +46,18 @@ const friends: Friend[] = [
 ];
 
 export default function FriendsScreen() {
+  const router = useRouter();
+  
+  const handleMessagePress = (friend: Friend) => {
+    router.push({
+      pathname: '/(screens)/chat',
+      params: { 
+        name: friend.name,
+        image: friend.image
+      }
+    });
+  };
+
   const renderFriendItem = ({ item }: { item: Friend }) => (
     <View style={styles.friendCard}>
       <Image 
@@ -55,7 +68,10 @@ export default function FriendsScreen() {
         <Text style={styles.name}>{item.name}</Text>
         <Text style={styles.lastActiveText}>Active: {item.lastActive}</Text>
       </View>
-      <TouchableOpacity style={styles.messageButton}>
+      <TouchableOpacity 
+        style={styles.messageButton}
+        onPress={() => handleMessagePress(item)}
+      >
         <Text style={styles.messageButtonText}>Message</Text>
       </TouchableOpacity>
     </View>

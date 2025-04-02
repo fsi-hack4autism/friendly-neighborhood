@@ -11,3 +11,4 @@
 9. For the profile button, show a overview of Mary's profile based on the questions from the questionaire section.
 10. Show app name: NeuroNest on the top of the home page. 
 11. The back button on connect, questionaire, and profile is not elegant. Could you fix the spacing and style of that with respect to the page titles.
+12. Within the friends tab, when the user clicks Message, open a new page with a sample chat interface UI between Mary and the user selected. It should look simple and elegant.
