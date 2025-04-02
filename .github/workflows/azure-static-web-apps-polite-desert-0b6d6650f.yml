@@ -31,6 +31,7 @@ jobs:
           app_location: "/src/friendly-neighborhood-ui/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "dist/friendly-neighborhood-ui" # Built app content directory - optional
+          skip_deploy_on_missing_secrets: true
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
