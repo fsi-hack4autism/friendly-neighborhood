@@ -71,6 +71,13 @@
             "lookingForMentorship": true,
             "availableForSupportCalls": true
           }
+        },
+        "experiences": {
+          "FinancialAid": true,
+          "ChildCare": true,
+          "TherapyMethods": true,
+          "Schooling": true,
+          "Other": "Participates in local support groups"
         }
       },
       {
@@ -144,6 +151,13 @@
             "lookingForMentorship": false,
             "availableForSupportCalls": false
           }
+        },
+        "experiences": {
+          "FinancialAid": true,
+          "ChildCare": true,
+          "TherapyMethods": true,
+          "Schooling": true,
+          "Other": "Volunteers in community events"
         }
       },
       {
@@ -217,6 +231,13 @@
             "lookingForMentorship": true,
             "availableForSupportCalls": true
           }
+        },
+        "experiences": {
+          "FinancialAid": true,
+          "ChildCare": true,
+          "TherapyMethods": true,
+          "Schooling": true,
+          "Other": "Advocates for autism awareness"
         }
       },
       {
@@ -290,6 +311,13 @@
             "lookingForMentorship": false,
             "availableForSupportCalls": false
           }
+        },
+        "experiences": {
+          "FinancialAid": true,
+          "ChildCare": true,
+          "TherapyMethods": true,
+          "Schooling": true,
+          "Other": "Organizes parent workshops"
         }
       },
       {
@@ -363,6 +391,13 @@
             "lookingForMentorship": true,
             "availableForSupportCalls": true
           }
+        },
+        "experiences": {
+          "FinancialAid": true,
+          "ChildCare": true,
+          "TherapyMethods": true,
+          "Schooling": true,
+          "Other": "Shares resources with other families"
         }
       },
       {
@@ -436,6 +471,13 @@
             "lookingForMentorship": false,
             "availableForSupportCalls": false
           }
+        },
+        "experiences": {
+          "FinancialAid": true,
+          "ChildCare": true,
+          "TherapyMethods": true,
+          "Schooling": true,
+          "Other": "Participates in therapy research studies"
         }
       },
       {
@@ -509,8 +551,414 @@
             "lookingForMentorship": true,
             "availableForSupportCalls": true
           }
+        },
+        "experiences": {
+          "FinancialAid": true,
+          "ChildCare": true,
+          "TherapyMethods": true,
+          "Schooling": true,
+          "Other": "Hosts community meetups"
         }
-      }
+      },
+      {
+        "userId": "8",
+        "fullName": "Liam Carter",
+        "email": "liam.carter@example.com",
+        "phone": "555-111-2222",
+        "location": {
+            "city": "Naperville",
+            "state": "IL",
+            "country": "USA"
+        },
+        "familyMembers": [
+            {
+                "memberId": "108",
+                "relationship": "child",
+                "fullName": "Olivia Carter",
+                "dateOfBirth": "2018-10-12",
+                "age": 6,
+                "gender": "female",
+                "diagnosis": {
+                    "condition": "Autism Spectrum Disorder (ASD)",
+                    "diagnosisDate": "2022-07-15",
+                    "diagnosingClinician": "Dr. Miller",
+                    "clinicalNotes": "Enjoys drawing and puzzles. Struggles with group activities."
+                },
+                "severityLevel": "Level 1 - Requiring Support",
+                "coexistingConditions": [],
+                "behavioralCharacteristics": {
+                    "socialCommunication": "Talkative but struggles with group dynamics",
+                    "repetitiveBehaviors": "Drawing repetitive patterns",
+                    "sensorySensitivities": "Sensitive to loud noises",
+                    "specialInterests": "Art and puzzles"
+                },
+                "medicalHistory": {
+                    "medications": [],
+                    "allergies": "None",
+                    "otherMedicalConditions": "None"
+                },
+                "therapyAndInterventions": [
+                    {
+                        "type": "Art Therapy",
+                        "provider": "Naperville Art Center",
+                        "frequency": "Once a week",
+                        "startDate": "2023-02-01"
+                    }
+                ],
+                "educationAndSupport": {
+                    "IEP": true,
+                    "504Plan": false,
+                    "schoolAccommodations": "Quiet spaces for breaks",
+                    "supportServices": ["Art therapy"]
+                },
+                "dailyLivingSkills": {
+                    "independenceLevel": "Mostly independent",
+                    "communicationMethod": "Verbal",
+                    "employmentStatus": "N/A",
+                    "housingSituation": "Living with parents"
+                }
+            }
+        ],
+        "preferences": {
+            "preferredMatchCriteria": {
+                "locationProximity": true,
+                "similarSeverityLevel": true,
+                "sharedInterests": true,
+                "similarAgeGroup": true
+            },
+            "communityEngagement": {
+                "willingToHostMeetups": false,
+                "lookingForMentorship": true,
+                "availableForSupportCalls": false
+            }
+        },
+        "experiences": {
+            "FinancialAid": true,
+            "ChildCare": true,
+            "TherapyMethods": true,
+            "Schooling": true,
+            "Other": "Participates in local art workshops"
+        }
+    },
+    {
+        "userId": "9",
+        "fullName": "Charlotte Green",
+        "email": "charlotte.green@example.com",
+        "phone": "555-333-4444",
+        "location": {
+            "city": "Peoria",
+            "state": "IL",
+            "country": "USA"
+        },
+        "familyMembers": [
+            {
+                "memberId": "109",
+                "relationship": "child",
+                "fullName": "Ethan Green",
+                "dateOfBirth": "2019-03-20",
+                "age": 5,
+                "gender": "male",
+                "diagnosis": {
+                    "condition": "Autism Spectrum Disorder (ASD)",
+                    "diagnosisDate": "2023-01-10",
+                    "diagnosingClinician": "Dr. Wilson",
+                    "clinicalNotes": "Enjoys music and singing. Struggles with transitions."
+                },
+                "severityLevel": "Level 2 - Requiring Substantial Support",
+                "coexistingConditions": [],
+                "behavioralCharacteristics": {
+                    "socialCommunication": "Limited verbal communication",
+                    "repetitiveBehaviors": "Humming and tapping",
+                    "sensorySensitivities": "Dislikes crowded spaces",
+                    "specialInterests": "Music and instruments"
+                },
+                "medicalHistory": {
+                    "medications": [],
+                    "allergies": "None",
+                    "otherMedicalConditions": "None"
+                },
+                "therapyAndInterventions": [
+                    {
+                        "type": "Music Therapy",
+                        "provider": "Peoria Music Center",
+                        "frequency": "Twice a week",
+                        "startDate": "2023-03-15"
+                    }
+                ],
+                "educationAndSupport": {
+                    "IEP": true,
+                    "504Plan": true,
+                    "schoolAccommodations": "Sensory-friendly classroom",
+                    "supportServices": ["Music therapy"]
+                },
+                "dailyLivingSkills": {
+                    "independenceLevel": "Needs assistance with daily tasks",
+                    "communicationMethod": "Limited verbal, uses AAC device",
+                    "employmentStatus": "N/A",
+                    "housingSituation": "Living with parents"
+                }
+            }
+        ],
+        "preferences": {
+            "preferredMatchCriteria": {
+                "locationProximity": true,
+                "similarSeverityLevel": true,
+                "sharedInterests": true,
+                "similarAgeGroup": true
+            },
+            "communityEngagement": {
+                "willingToHostMeetups": true,
+                "lookingForMentorship": false,
+                "availableForSupportCalls": false
+            }
+        },
+        "experiences": {
+            "FinancialAid": true,
+            "ChildCare": true,
+            "TherapyMethods": true,
+            "Schooling": true,
+            "Other": "Organizes music meetups"
+        }
+    },
+    {
+        "userId": "10",
+        "fullName": "Henry White",
+        "email": "henry.white@example.com",
+        "phone": "555-555-6666",
+        "location": {
+            "city": "Champaign",
+            "state": "IL",
+            "country": "USA"
+        },
+        "familyMembers": [
+            {
+                "memberId": "110",
+                "relationship": "child",
+                "fullName": "Sophia White",
+                "dateOfBirth": "2017-12-05",
+                "age": 7,
+                "gender": "female",
+                "diagnosis": {
+                    "condition": "Autism Spectrum Disorder (ASD)",
+                    "diagnosisDate": "2021-09-20",
+                    "diagnosingClinician": "Dr. Brown",
+                    "clinicalNotes": "Enjoys reading and storytelling. Struggles with sensory sensitivities."
+                },
+                "severityLevel": "Level 1 - Requiring Support",
+                "coexistingConditions": [],
+                "behavioralCharacteristics": {
+                    "socialCommunication": "Talkative but struggles with social boundaries",
+                    "repetitiveBehaviors": "Repeating stories",
+                    "sensorySensitivities": "Sensitive to bright lights",
+                    "specialInterests": "Books and storytelling"
+                },
+                "medicalHistory": {
+                    "medications": [],
+                    "allergies": "None",
+                    "otherMedicalConditions": "None"
+                },
+                "therapyAndInterventions": [
+                    {
+                        "type": "Speech Therapy",
+                        "provider": "Champaign Therapy Center",
+                        "frequency": "Once a week",
+                        "startDate": "2022-01-15"
+                    }
+                ],
+                "educationAndSupport": {
+                    "IEP": true,
+                    "504Plan": false,
+                    "schoolAccommodations": "Quiet reading spaces",
+                    "supportServices": ["Speech therapy"]
+                },
+                "dailyLivingSkills": {
+                    "independenceLevel": "Mostly independent",
+                    "communicationMethod": "Verbal",
+                    "employmentStatus": "N/A",
+                    "housingSituation": "Living with parents"
+                }
+            }
+        ],
+        "preferences": {
+            "preferredMatchCriteria": {
+                "locationProximity": true,
+                "similarSeverityLevel": true,
+                "sharedInterests": true,
+                "similarAgeGroup": true
+            },
+            "communityEngagement": {
+                "willingToHostMeetups": false,
+                "lookingForMentorship": true,
+                "availableForSupportCalls": true
+            }
+        },
+        "experiences": {
+            "FinancialAid": true,
+            "ChildCare": true,
+            "TherapyMethods": true,
+            "Schooling": true,
+            "Other": "Hosts storytelling workshops"
+        }
+    },
+    {
+        "userId": "11",
+        "fullName": "Amelia Johnson",
+        "email": "amelia.johnson@example.com",
+        "phone": "555-777-8888",
+        "location": {
+            "city": "Rockford",
+            "state": "IL",
+            "country": "USA"
+        },
+        "familyMembers": [
+            {
+                "memberId": "111",
+                "relationship": "child",
+                "fullName": "Liam Johnson",
+                "dateOfBirth": "2019-05-10",
+                "age": 5,
+                "gender": "male",
+                "diagnosis": {
+                    "condition": "Autism Spectrum Disorder (ASD)",
+                    "diagnosisDate": "2022-11-01",
+                    "diagnosingClinician": "Dr. Taylor",
+                    "clinicalNotes": "Enjoys building blocks. Struggles with changes in routine."
+                },
+                "severityLevel": "Level 2 - Requiring Substantial Support",
+                "coexistingConditions": [],
+                "behavioralCharacteristics": {
+                    "socialCommunication": "Limited verbal communication",
+                    "repetitiveBehaviors": "Stacking and organizing objects",
+                    "sensorySensitivities": "Dislikes sudden noises",
+                    "specialInterests": "Building blocks and construction"
+                },
+                "medicalHistory": {
+                    "medications": [],
+                    "allergies": "None",
+                    "otherMedicalConditions": "None"
+                },
+                "therapyAndInterventions": [
+                    {
+                        "type": "Occupational Therapy",
+                        "provider": "Rockford OT Clinic",
+                        "frequency": "Twice a week",
+                        "startDate": "2023-04-01"
+                    }
+                ],
+                "educationAndSupport": {
+                    "IEP": true,
+                    "504Plan": true,
+                    "schoolAccommodations": "Extra time for transitions",
+                    "supportServices": ["Occupational therapy"]
+                },
+                "dailyLivingSkills": {
+                    "independenceLevel": "Needs assistance with daily tasks",
+                    "communicationMethod": "Limited verbal, uses AAC device",
+                    "employmentStatus": "N/A",
+                    "housingSituation": "Living with parents"
+                }
+            }
+        ],
+        "preferences": {
+            "preferredMatchCriteria": {
+                "locationProximity": true,
+                "similarSeverityLevel": true,
+                "sharedInterests": true,
+                "similarAgeGroup": true
+            },
+            "communityEngagement": {
+                "willingToHostMeetups": true,
+                "lookingForMentorship": false,
+                "availableForSupportCalls": false
+            }
+        },
+        "experiences": {
+            "FinancialAid": true,
+            "ChildCare": true,
+            "TherapyMethods": true,
+            "Schooling": true,
+            "Other": "Participates in therapy research studies"
+        }
+    },
+    {
+        "userId": "12",
+        "fullName": "Mia Brown",
+        "email": "mia.brown@example.com",
+        "phone": "555-999-0000",
+        "location": {
+            "city": "Aurora",
+            "state": "IL",
+            "country": "USA"
+        },
+        "familyMembers": [
+            {
+                "memberId": "112",
+                "relationship": "child",
+                "fullName": "Ella Brown",
+                "dateOfBirth": "2020-02-15",
+                "age": 5,
+                "gender": "female",
+                "diagnosis": {
+                    "condition": "Autism Spectrum Disorder (ASD)",
+                    "diagnosisDate": "2023-02-20",
+                    "diagnosingClinician": "Dr. Green",
+                    "clinicalNotes": "Enjoys painting and crafts. Struggles with sensory overload."
+                },
+                "severityLevel": "Level 1 - Requiring Support",
+                "coexistingConditions": [],
+                "behavioralCharacteristics": {
+                    "socialCommunication": "Talkative but struggles with turn-taking",
+                    "repetitiveBehaviors": "Drawing repetitive patterns",
+                    "sensorySensitivities": "Sensitive to loud noises",
+                    "specialInterests": "Painting and crafts"
+                },
+                "medicalHistory": {
+                    "medications": [],
+                    "allergies": "None",
+                    "otherMedicalConditions": "None"
+                },
+                "therapyAndInterventions": [
+                    {
+                        "type": "Art Therapy",
+                        "provider": "Aurora Art Center",
+                        "frequency": "Once a week",
+                        "startDate": "2023-05-10"
+                    }
+                ],
+                "educationAndSupport": {
+                    "IEP": true,
+                    "504Plan": false,
+                    "schoolAccommodations": "Sensory-friendly classroom",
+                    "supportServices": ["Art therapy"]
+                },
+                "dailyLivingSkills": {
+                    "independenceLevel": "Mostly independent",
+                    "communicationMethod": "Verbal",
+                    "employmentStatus": "N/A",
+                    "housingSituation": "Living with parents"
+                }
+            }
+        ],
+        "preferences": {
+            "preferredMatchCriteria": {
+                "locationProximity": true,
+                "similarSeverityLevel": true,
+                "sharedInterests": true,
+                "similarAgeGroup": true
+            },
+            "communityEngagement": {
+                "willingToHostMeetups": false,
+                "lookingForMentorship": true,
+                "availableForSupportCalls": true
+            }
+        },
+        "experiences": {
+            "FinancialAid": true,
+            "ChildCare": true,
+            "TherapyMethods": true,
+            "Schooling": true,
+            "Other": "Shares resources with other families"
+        }
+    }
     ]
   }
-  
