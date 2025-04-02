@@ -1,0 +1,516 @@
+{
+    "users": [
+      {
+        "userId": "1",
+        "fullName": "Alice Johnson",
+        "email": "alice.johnson@example.com",
+        "phone": "123-456-7890",
+        "location": {
+          "city": "Springfield",
+          "state": "IL",
+          "country": "USA"
+        },
+        "familyMembers": [
+          {
+            "memberId": "101",
+            "relationship": "child",
+            "fullName": "Ethan Johnson",
+            "dateOfBirth": "2019-06-15",
+            "age": 5,
+            "gender": "male",
+            "diagnosis": {
+              "condition": "Autism Spectrum Disorder (ASD)",
+              "diagnosisDate": "2022-09-10",
+              "diagnosingClinician": "Dr. Smith",
+              "clinicalNotes": "Shows strong interest in numbers and letters. Struggles with eye contact."
+            },
+            "severityLevel": "Level 2 - Requiring Substantial Support",
+            "coexistingConditions": [],
+            "behavioralCharacteristics": {
+              "socialCommunication": "Limited verbal communication",
+              "repetitiveBehaviors": "Hand flapping and rocking",
+              "sensorySensitivities": "Sensitive to loud noises",
+              "specialInterests": "Numbers and letters"
+            },
+            "medicalHistory": {
+              "medications": [],
+              "allergies": "None",
+              "otherMedicalConditions": "None"
+            },
+            "therapyAndInterventions": [
+              {
+                "type": "Speech Therapy",
+                "provider": "Springfield Therapy Center",
+                "frequency": "Twice a week",
+                "startDate": "2023-01-15"
+              }
+            ],
+            "educationAndSupport": {
+              "IEP": true,
+              "504Plan": false,
+              "schoolAccommodations": "Small classroom setting",
+              "supportServices": ["Speech therapy", "Behavioral therapy"]
+            },
+            "dailyLivingSkills": {
+              "independenceLevel": "Needs assistance with daily tasks",
+              "communicationMethod": "Limited verbal, uses AAC device",
+              "employmentStatus": "N/A",
+              "housingSituation": "Living with parents"
+            }
+          }
+        ],
+        "preferences": {
+          "preferredMatchCriteria": {
+            "locationProximity": true,
+            "similarSeverityLevel": true,
+            "sharedInterests": false,
+            "similarAgeGroup": true
+          },
+          "communityEngagement": {
+            "willingToHostMeetups": false,
+            "lookingForMentorship": true,
+            "availableForSupportCalls": true
+          }
+        }
+      },
+      {
+        "userId": "2",
+        "fullName": "Mark Thompson",
+        "email": "mark.thompson@example.com",
+        "phone": "987-654-3210",
+        "location": {
+          "city": "Springfield",
+          "state": "IL",
+          "country": "USA"
+        },
+        "familyMembers": [
+          {
+            "memberId": "102",
+            "relationship": "child",
+            "fullName": "Sophia Thompson",
+            "dateOfBirth": "2018-12-20",
+            "age": 6,
+            "gender": "female",
+            "diagnosis": {
+              "condition": "Autism Spectrum Disorder (ASD)",
+              "diagnosisDate": "2022-05-12",
+              "diagnosingClinician": "Dr. Adams",
+              "clinicalNotes": "Highly verbal but struggles with social cues."
+            },
+            "severityLevel": "Level 1 - Requiring Support",
+            "coexistingConditions": [],
+            "behavioralCharacteristics": {
+              "socialCommunication": "Talkative but struggles with social boundaries",
+              "repetitiveBehaviors": "Repetitive speech patterns",
+              "sensorySensitivities": "Dislikes bright lights",
+              "specialInterests": "Animals and space"
+            },
+            "medicalHistory": {
+              "medications": [],
+              "allergies": "Peanuts",
+              "otherMedicalConditions": "Mild asthma"
+            },
+            "therapyAndInterventions": [
+              {
+                "type": "Occupational Therapy",
+                "provider": "Springfield OT Clinic",
+                "frequency": "Once a week",
+                "startDate": "2023-03-10"
+              }
+            ],
+            "educationAndSupport": {
+              "IEP": true,
+              "504Plan": true,
+              "schoolAccommodations": "Extra time on tasks",
+              "supportServices": ["Social skills training"]
+            },
+            "dailyLivingSkills": {
+              "independenceLevel": "Mostly independent",
+              "communicationMethod": "Verbal",
+              "employmentStatus": "N/A",
+              "housingSituation": "Living with parents"
+            }
+          }
+        ],
+        "preferences": {
+          "preferredMatchCriteria": {
+            "locationProximity": true,
+            "similarSeverityLevel": true,
+            "sharedInterests": true,
+            "similarAgeGroup": true
+          },
+          "communityEngagement": {
+            "willingToHostMeetups": true,
+            "lookingForMentorship": false,
+            "availableForSupportCalls": false
+          }
+        }
+      },
+      {
+        "userId": "3",
+        "fullName": "Emma Davis",
+        "email": "emma.davis@example.com",
+        "phone": "555-123-4567",
+        "location": {
+          "city": "Springfield",
+          "state": "IL",
+          "country": "USA"
+        },
+        "familyMembers": [
+          {
+            "memberId": "103",
+            "relationship": "child",
+            "fullName": "Liam Davis",
+            "dateOfBirth": "2020-03-25",
+            "age": 5,
+            "gender": "male",
+            "diagnosis": {
+              "condition": "Autism Spectrum Disorder (ASD)",
+              "diagnosisDate": "2023-02-15",
+              "diagnosingClinician": "Dr. Brown",
+              "clinicalNotes": "Enjoys puzzles and problem-solving. Struggles with transitions."
+            },
+            "severityLevel": "Level 2 - Requiring Substantial Support",
+            "coexistingConditions": [],
+            "behavioralCharacteristics": {
+              "socialCommunication": "Limited verbal communication",
+              "repetitiveBehaviors": "Spinning objects",
+              "sensorySensitivities": "Sensitive to textures",
+              "specialInterests": "Puzzles and shapes"
+            },
+            "medicalHistory": {
+              "medications": [],
+              "allergies": "None",
+              "otherMedicalConditions": "None"
+            },
+            "therapyAndInterventions": [
+              {
+                "type": "Behavioral Therapy",
+                "provider": "Springfield Behavioral Center",
+                "frequency": "Twice a week",
+                "startDate": "2023-06-01"
+              }
+            ],
+            "educationAndSupport": {
+              "IEP": true,
+              "504Plan": false,
+              "schoolAccommodations": "Visual schedules",
+              "supportServices": ["Behavioral therapy"]
+            },
+            "dailyLivingSkills": {
+              "independenceLevel": "Needs assistance with daily tasks",
+              "communicationMethod": "Limited verbal, uses visual aids",
+              "employmentStatus": "N/A",
+              "housingSituation": "Living with parents"
+            }
+          }
+        ],
+        "preferences": {
+          "preferredMatchCriteria": {
+            "locationProximity": true,
+            "similarSeverityLevel": true,
+            "sharedInterests": false,
+            "similarAgeGroup": true
+          },
+          "communityEngagement": {
+            "willingToHostMeetups": false,
+            "lookingForMentorship": true,
+            "availableForSupportCalls": true
+          }
+        }
+      },
+      {
+        "userId": "4",
+        "fullName": "Olivia Martinez",
+        "email": "olivia.martinez@example.com",
+        "phone": "555-987-6543",
+        "location": {
+          "city": "Springfield",
+          "state": "IL",
+          "country": "USA"
+        },
+        "familyMembers": [
+          {
+            "memberId": "104",
+            "relationship": "child",
+            "fullName": "Noah Martinez",
+            "dateOfBirth": "2019-11-10",
+            "age": 5,
+            "gender": "male",
+            "diagnosis": {
+              "condition": "Autism Spectrum Disorder (ASD)",
+              "diagnosisDate": "2022-08-20",
+              "diagnosingClinician": "Dr. Green",
+              "clinicalNotes": "Shows strong interest in music. Struggles with group activities."
+            },
+            "severityLevel": "Level 1 - Requiring Support",
+            "coexistingConditions": [],
+            "behavioralCharacteristics": {
+              "socialCommunication": "Talkative but struggles with group dynamics",
+              "repetitiveBehaviors": "Humming and tapping",
+              "sensorySensitivities": "Dislikes crowded spaces",
+              "specialInterests": "Music and instruments"
+            },
+            "medicalHistory": {
+              "medications": [],
+              "allergies": "None",
+              "otherMedicalConditions": "None"
+            },
+            "therapyAndInterventions": [
+              {
+                "type": "Music Therapy",
+                "provider": "Springfield Music Center",
+                "frequency": "Once a week",
+                "startDate": "2023-04-15"
+              }
+            ],
+            "educationAndSupport": {
+              "IEP": true,
+              "504Plan": true,
+              "schoolAccommodations": "Quiet spaces for breaks",
+              "supportServices": ["Music therapy"]
+            },
+            "dailyLivingSkills": {
+              "independenceLevel": "Mostly independent",
+              "communicationMethod": "Verbal",
+              "employmentStatus": "N/A",
+              "housingSituation": "Living with parents"
+            }
+          }
+        ],
+        "preferences": {
+          "preferredMatchCriteria": {
+            "locationProximity": true,
+            "similarSeverityLevel": true,
+            "sharedInterests": true,
+            "similarAgeGroup": true
+          },
+          "communityEngagement": {
+            "willingToHostMeetups": true,
+            "lookingForMentorship": false,
+            "availableForSupportCalls": false
+          }
+        }
+      },
+      {
+        "userId": "5",
+        "fullName": "Sophia Wilson",
+        "email": "sophia.wilson@example.com",
+        "phone": "555-654-3210",
+        "location": {
+          "city": "Springfield",
+          "state": "IL",
+          "country": "USA"
+        },
+        "familyMembers": [
+          {
+            "memberId": "105",
+            "relationship": "child",
+            "fullName": "Ella Wilson",
+            "dateOfBirth": "2020-07-05",
+            "age": 4,
+            "gender": "female",
+            "diagnosis": {
+              "condition": "Autism Spectrum Disorder (ASD)",
+              "diagnosisDate": "2023-01-10",
+              "diagnosingClinician": "Dr. White",
+              "clinicalNotes": "Enjoys drawing and art. Struggles with sensory overload."
+            },
+            "severityLevel": "Level 2 - Requiring Substantial Support",
+            "coexistingConditions": [],
+            "behavioralCharacteristics": {
+              "socialCommunication": "Limited verbal communication",
+              "repetitiveBehaviors": "Drawing repetitive patterns",
+              "sensorySensitivities": "Sensitive to loud noises and bright lights",
+              "specialInterests": "Drawing and painting"
+            },
+            "medicalHistory": {
+              "medications": [],
+              "allergies": "None",
+              "otherMedicalConditions": "None"
+            },
+            "therapyAndInterventions": [
+              {
+                "type": "Art Therapy",
+                "provider": "Springfield Art Center",
+                "frequency": "Twice a week",
+                "startDate": "2023-05-01"
+              }
+            ],
+            "educationAndSupport": {
+              "IEP": true,
+              "504Plan": false,
+              "schoolAccommodations": "Sensory-friendly classroom",
+              "supportServices": ["Art therapy"]
+            },
+            "dailyLivingSkills": {
+              "independenceLevel": "Needs assistance with daily tasks",
+              "communicationMethod": "Limited verbal, uses AAC device",
+              "employmentStatus": "N/A",
+              "housingSituation": "Living with parents"
+            }
+          }
+        ],
+        "preferences": {
+          "preferredMatchCriteria": {
+            "locationProximity": true,
+            "similarSeverityLevel": true,
+            "sharedInterests": true,
+            "similarAgeGroup": true
+          },
+          "communityEngagement": {
+            "willingToHostMeetups": false,
+            "lookingForMentorship": true,
+            "availableForSupportCalls": true
+          }
+        }
+      },
+      {
+        "userId": "6",
+        "fullName": "James Brown",
+        "email": "james.brown@example.com",
+        "phone": "555-789-1234",
+        "location": {
+          "city": "Springfield",
+          "state": "IL",
+          "country": "USA"
+        },
+        "familyMembers": [
+          {
+            "memberId": "106",
+            "relationship": "child",
+            "fullName": "Mason Brown",
+            "dateOfBirth": "2019-09-15",
+            "age": 5,
+            "gender": "male",
+            "diagnosis": {
+              "condition": "Autism Spectrum Disorder (ASD)",
+              "diagnosisDate": "2022-11-05",
+              "diagnosingClinician": "Dr. Taylor",
+              "clinicalNotes": "Enjoys building blocks. Struggles with changes in routine."
+            },
+            "severityLevel": "Level 1 - Requiring Support",
+            "coexistingConditions": [],
+            "behavioralCharacteristics": {
+              "socialCommunication": "Talkative but struggles with turn-taking",
+              "repetitiveBehaviors": "Stacking and organizing objects",
+              "sensorySensitivities": "Dislikes sudden noises",
+              "specialInterests": "Building blocks and construction"
+            },
+            "medicalHistory": {
+              "medications": [],
+              "allergies": "None",
+              "otherMedicalConditions": "None"
+            },
+            "therapyAndInterventions": [
+              {
+                "type": "Occupational Therapy",
+                "provider": "Springfield OT Clinic",
+                "frequency": "Once a week",
+                "startDate": "2023-02-20"
+              }
+            ],
+            "educationAndSupport": {
+              "IEP": true,
+              "504Plan": true,
+              "schoolAccommodations": "Extra time for transitions",
+              "supportServices": ["Occupational therapy"]
+            },
+            "dailyLivingSkills": {
+              "independenceLevel": "Mostly independent",
+              "communicationMethod": "Verbal",
+              "employmentStatus": "N/A",
+              "housingSituation": "Living with parents"
+            }
+          }
+        ],
+        "preferences": {
+          "preferredMatchCriteria": {
+            "locationProximity": true,
+            "similarSeverityLevel": true,
+            "sharedInterests": true,
+            "similarAgeGroup": true
+          },
+          "communityEngagement": {
+            "willingToHostMeetups": true,
+            "lookingForMentorship": false,
+            "availableForSupportCalls": false
+          }
+        }
+      },
+      {
+        "userId": "7",
+        "fullName": "Isabella Clark",
+        "email": "isabella.clark@example.com",
+        "phone": "555-321-9876",
+        "location": {
+          "city": "Springfield",
+          "state": "IL",
+          "country": "USA"
+        },
+        "familyMembers": [
+          {
+            "memberId": "107",
+            "relationship": "child",
+            "fullName": "Ava Clark",
+            "dateOfBirth": "2020-01-30",
+            "age": 5,
+            "gender": "female",
+            "diagnosis": {
+              "condition": "Autism Spectrum Disorder (ASD)",
+              "diagnosisDate": "2023-03-12",
+              "diagnosingClinician": "Dr. Lee",
+              "clinicalNotes": "Enjoys storytelling. Struggles with sensory sensitivities."
+            },
+            "severityLevel": "Level 2 - Requiring Substantial Support",
+            "coexistingConditions": [],
+            "behavioralCharacteristics": {
+              "socialCommunication": "Limited verbal communication",
+              "repetitiveBehaviors": "Repeating stories",
+              "sensorySensitivities": "Sensitive to touch",
+              "specialInterests": "Books and storytelling"
+            },
+            "medicalHistory": {
+              "medications": [],
+              "allergies": "None",
+              "otherMedicalConditions": "None"
+            },
+            "therapyAndInterventions": [
+              {
+                "type": "Speech Therapy",
+                "provider": "Springfield Therapy Center",
+                "frequency": "Twice a week",
+                "startDate": "2023-07-01"
+              }
+            ],
+            "educationAndSupport": {
+              "IEP": true,
+              "504Plan": false,
+              "schoolAccommodations": "Quiet reading spaces",
+              "supportServices": ["Speech therapy"]
+            },
+            "dailyLivingSkills": {
+              "independenceLevel": "Needs assistance with daily tasks",
+              "communicationMethod": "Limited verbal, uses AAC device",
+              "employmentStatus": "N/A",
+              "housingSituation": "Living with parents"
+            }
+          }
+        ],
+        "preferences": {
+          "preferredMatchCriteria": {
+            "locationProximity": true,
+            "similarSeverityLevel": true,
+            "sharedInterests": true,
+            "similarAgeGroup": true
+          },
+          "communityEngagement": {
+            "willingToHostMeetups": false,
+            "lookingForMentorship": true,
+            "availableForSupportCalls": true
+          }
+        }
+      }
+    ]
+  }
+  
