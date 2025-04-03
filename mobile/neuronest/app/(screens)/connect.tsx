@@ -112,11 +112,11 @@ export default function ConnectScreen() {
 
 const getRankColor = (rank: number) => {
   switch(rank) {
-    case 5: return '#2A9D8F'; // green
-    case 4: return '#4EA8DE'; // blue
-    case 3: return '#7678ED'; // purple
-    case 2: return '#F4A261'; // orange
-    case 1: return '#E76F51'; // red
+    case 5: return '#2E8B57'; // green
+    case 4: return '#63A375'; // green-yellow
+    case 3: return '#F9C74F'; // yellow
+    case 2: return '#F4845F'; // orange
+    case 1: return '#E63946'; // red
     default: return Colors.light.tint;
   }
 };
@@ -203,8 +203,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    right: 16,
-    top: 16,
+    right: 12,
+    top: 12,
   },
   rankText: {
     color: '#fff',
