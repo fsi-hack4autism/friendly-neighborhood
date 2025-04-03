@@ -1,0 +1,6 @@
+src/matchService/__azurite_db_blob__.json
+src/matchService/__azurite_db_blob_extent__.json
+src/matchService/__azurite_db_queue__.json
+src/matchService/__azurite_db_queue_extent__.json
+src/matchService/__azurite_db_table__.json
+src/matchService/__blobstorage__/311f954a-c869-40b1-8157-890675d34a3b

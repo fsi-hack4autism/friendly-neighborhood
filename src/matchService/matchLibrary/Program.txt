@@ -2,17 +2,11 @@
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
-        if (args.Length > 0 && int.TryParse(args[0], out int age))
-        {
-            var matchingRecords = GetRecordsByFamilyMemberAge(age);
-            Console.WriteLine(JsonSerializer.Serialize(matchingRecords, new JsonSerializerOptions { WriteIndented = true }));
-        }
-        else
-        {
-            Console.WriteLine("Please provide a valid age as a command-line argument.");
-        }
+
+        var result = await IntentClassifier.ClassifyIntent("Where can I find help paying for my child's therapy?");
+        AutismParentMatcher.Match(result);
     }
 
     static List<string> GetRecordsByFamilyMemberAge(int age)

@@ -73,10 +73,11 @@
           }
         },
         "experiences": {
-          "FinancialAid": true,
+          "FinancialAid": false,
           "ChildCare": true,
-          "TherapyMethods": true,
+          "TherapyMethods": false,
           "Schooling": true,
+          "medicalAndDoctors": false,
           "Other": "Participates in local support groups"
         }
       },
@@ -154,9 +155,10 @@
         },
         "experiences": {
           "FinancialAid": true,
-          "ChildCare": true,
-          "TherapyMethods": true,
+          "ChildCare": false,
+          "TherapyMethods": false,
           "Schooling": true,
+          "medicalAndDoctors": false,
           "Other": "Volunteers in community events"
         }
       },
@@ -233,10 +235,11 @@
           }
         },
         "experiences": {
-          "FinancialAid": true,
-          "ChildCare": true,
+          "FinancialAid": false,
+          "ChildCare": false,
           "TherapyMethods": true,
           "Schooling": true,
+          "medicalAndDoctors": false,
           "Other": "Advocates for autism awareness"
         }
       },
@@ -314,9 +317,10 @@
         },
         "experiences": {
           "FinancialAid": true,
-          "ChildCare": true,
-          "TherapyMethods": true,
-          "Schooling": true,
+          "ChildCare": false,
+          "TherapyMethods": false,
+          "Schooling": false,
+          "medicalAndDoctors": true,
           "Other": "Organizes parent workshops"
         }
       },
@@ -393,10 +397,11 @@
           }
         },
         "experiences": {
-          "FinancialAid": true,
+          "FinancialAid": false,
           "ChildCare": true,
-          "TherapyMethods": true,
-          "Schooling": true,
+          "TherapyMethods": false,
+          "Schooling": false,
+          "medicalAndDoctors": true,
           "Other": "Shares resources with other families"
         }
       },
@@ -474,9 +479,10 @@
         },
         "experiences": {
           "FinancialAid": true,
-          "ChildCare": true,
+          "ChildCare": false,
           "TherapyMethods": true,
-          "Schooling": true,
+          "Schooling": false,
+          "medicalAndDoctors": false,
           "Other": "Participates in therapy research studies"
         }
       },
@@ -553,10 +559,11 @@
           }
         },
         "experiences": {
-          "FinancialAid": true,
+          "FinancialAid": false,
           "ChildCare": true,
-          "TherapyMethods": true,
+          "TherapyMethods": false,
           "Schooling": true,
+          "medicalAndDoctors": false,
           "Other": "Hosts community meetups"
         }
       },
@@ -634,9 +641,10 @@
         },
         "experiences": {
             "FinancialAid": true,
-            "ChildCare": true,
-            "TherapyMethods": true,
+            "ChildCare": false,
+            "TherapyMethods": false,
             "Schooling": true,
+            "medicalAndDoctors": false,
             "Other": "Participates in local art workshops"
         }
     },
@@ -713,10 +721,11 @@
             }
         },
         "experiences": {
-            "FinancialAid": true,
+            "FinancialAid": false,
             "ChildCare": true,
-            "TherapyMethods": true,
-            "Schooling": true,
+            "TherapyMethods": false,
+            "Schooling": false,
+            "medicalAndDoctors": true,
             "Other": "Organizes music meetups"
         }
     },
@@ -793,10 +802,11 @@
             }
         },
         "experiences": {
-            "FinancialAid": true,
-            "ChildCare": true,
+            "FinancialAid": false,
+            "ChildCare": false,
             "TherapyMethods": true,
             "Schooling": true,
+            "medicalAndDoctors": false,
             "Other": "Hosts storytelling workshops"
         }
     },
@@ -874,9 +884,10 @@
         },
         "experiences": {
             "FinancialAid": true,
-            "ChildCare": true,
-            "TherapyMethods": true,
+            "ChildCare": false,
+            "TherapyMethods": false,
             "Schooling": true,
+            "medicalAndDoctors": false,
             "Other": "Participates in therapy research studies"
         }
     },
@@ -953,10 +964,11 @@
             }
         },
         "experiences": {
-            "FinancialAid": true,
+            "FinancialAid": false,
             "ChildCare": true,
             "TherapyMethods": true,
-            "Schooling": true,
+            "Schooling": false,
+            "medicalAndDoctors": false,
             "Other": "Shares resources with other families"
         }
     }
