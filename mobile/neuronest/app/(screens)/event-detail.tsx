@@ -176,8 +176,6 @@ export default function EventDetailScreen() {
         <Text style={styles.title} numberOfLines={1}>{event.title}</Text>
         <View style={styles.placeholder} />
       </View>
-
-      <Image source={event.image} style={styles.eventImage} />
       
       <View style={styles.contentContainer}>
         <FlatList
@@ -185,17 +183,20 @@ export default function EventDetailScreen() {
           keyExtractor={(item) => 'key' in item ? item.key : item.id}
           renderItem={({ item }) => {
             if ('key' in item) {
-              // Render event details section
+              // Render event details section with the image included at the top
               return (
                 <View>
-                  <Text style={styles.eventTitle}>{event.title}</Text>
-                  <Text style={styles.eventDate}>{event.date} • {event.time}</Text>
-                  <Text style={styles.eventLocation}>{event.location}</Text>
-                  <Text style={styles.eventDescription}>{event.description}</Text>
-                  
-                  <View style={styles.divider} />
-                  
-                  <Text style={styles.commentsHeader}>Discussion ({event.comments.length})</Text>
+                  <Image source={event.image} style={styles.eventImage} />
+                  <View style={styles.contentPadding}>
+                    <Text style={styles.eventTitle}>{event.title}</Text>
+                    <Text style={styles.eventDate}>{event.date} • {event.time}</Text>
+                    <Text style={styles.eventLocation}>{event.location}</Text>
+                    <Text style={styles.eventDescription}>{event.description}</Text>
+                    
+                    <View style={styles.divider} />
+                    
+                    <Text style={styles.commentsHeader}>Discussion ({event.comments.length})</Text>
+                  </View>
                 </View>
               );
             } else {
@@ -246,7 +247,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    paddingTop: 50,
+    paddingTop: 16,
     paddingBottom: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#f0f0f0',
@@ -280,6 +281,9 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentListInner: {
+    paddingBottom: 20,
+  },
+  contentPadding: {
     padding: 20,
   },
   eventTitle: {
@@ -316,6 +320,7 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   commentItem: {
+    marginHorizontal: 20,
     marginBottom: 15,
     paddingBottom: 15,
     borderBottomWidth: 1,
