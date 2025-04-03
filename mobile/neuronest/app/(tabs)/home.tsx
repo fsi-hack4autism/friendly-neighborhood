@@ -65,14 +65,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: 50,
-    paddingHorizontal: 20,
+    paddingTop: 0, // Removed top padding as header will have its own background
+    paddingHorizontal: 0, // Removed horizontal padding to allow header to stretch full width
   },
   appHeader: {
-    marginBottom: 30,
+    paddingVertical: 20,
+    paddingHorizontal: 20,
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'center',
+    backgroundColor: Colors.light.tint,
+    marginBottom: 30,
   },
   appLogo: {
     width: 40,
@@ -82,11 +85,11 @@ const styles = StyleSheet.create({
   appName: {
     fontSize: 32,
     fontWeight: '700',
-    color: Colors.light.tint,
+    color: '#fff', // Changed to white for better contrast against dark background
   },
   contentContainer: {
     alignItems: 'center',
-    paddingTop: 20, // Add top padding to move content down from app header
+    paddingTop: 50, // Add top padding to move content down from app header
   },
   welcomeContainer: {
     alignItems: 'center',

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, FlatList, KeyboardAvoidingView, Platform } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Colors } from '../../constants/Colors';
+import { Ionicons } from '@expo/vector-icons';
 
 type Comment = {
   id: string;
@@ -171,7 +172,7 @@ export default function EventDetailScreen() {
     >
       <View style={styles.header}>
         <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
-          <Text style={styles.backText}>←</Text>
+          <Ionicons name="chevron-back" size={24} color={Colors.light.tint} />
         </TouchableOpacity>
         <Text style={styles.title} numberOfLines={1}>{event.title}</Text>
         <View style={styles.placeholder} />
