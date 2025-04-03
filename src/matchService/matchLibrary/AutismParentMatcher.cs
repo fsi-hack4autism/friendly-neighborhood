@@ -2,61 +2,63 @@ using System.Text.Json;
 using System.Reflection;
 public partial class AutismParentMatcher
 {
-    public async static Task<object> Match(string? experience)
+    public async static Task<object> Match(string UsersJsonUrl, string? experience)
     {
-        string jsonFilePath = Path.Combine(AppContext.BaseDirectory, "sample.json");
-        return await ProcessFile(jsonFilePath, experience!);
+        return await ProcessFile(UsersJsonUrl, experience!);
     }
 
-   public async static Task<object> ProcessFile(string jsonFilePath, string experience)
-{
-    List<User> users = await LoadUsersFromJson(jsonFilePath);
-    List<User> matchingUsers = FindMatchingUsers(users, experience);
-
-    if (matchingUsers.Count > 0)
+    public async static Task<object> ProcessFile(string UsersJsonUrl, string experience)
     {
-        var result = new List<object>();
-        foreach (var user in matchingUsers)
+        List<User> users = await LoadUsersFromJson(UsersJsonUrl);
+        List<User> matchingUsers = FindMatchingUsers(users, experience);
+
+        if (matchingUsers.Count > 0)
         {
-            var userResult = new
+            var result = new List<object>();
+            foreach (var user in matchingUsers)
             {
-                FullName = user.FullName,
-                Location = user.Location != null
-                    ? new { user.Location.City, user.Location.State }
-                    : null,
-                Email = user.Email,
-                Phone = user.Phone,
-                Experiences = typeof(Experiences)
-                    .GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                    .Where(prop => prop.PropertyType == typeof(bool) && prop.GetValue(user.Experiences) is bool value && value)
-                    .Select(prop => prop.Name),
-                Children = user.FamilyMembers?.Select(child => new
+                var userResult = new
                 {
-                    child.FullName,
-                    DiagnosingClinician = child.Diagnosis?.DiagnosingClinician
-                })
-            };
+                    FullName = user.FullName,
+                    Location = user.Location != null
+                        ? new { user.Location.City, user.Location.State }
+                        : null,
+                    Email = user.Email,
+                    Phone = user.Phone,
+                    Experiences = typeof(Experiences)
+                        .GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                        .Where(prop => prop.PropertyType == typeof(bool) && prop.GetValue(user.Experiences) is bool value && value)
+                        .Select(prop => prop.Name),
+                    Children = user.FamilyMembers?.Select(child => new
+                    {
+                        child.FullName,
+                        DiagnosingClinician = child.Diagnosis?.DiagnosingClinician
+                    })
+                };
 
-            result.Add(userResult);
+                result.Add(userResult);
+            }
+
+            return new { MatchingUsers = result };
         }
-
-        return new { MatchingUsers = result };
+        else
+        {
+            return new { Message = "No matching families found." };
+        }
     }
-    else
-    {
-        return new { Message = "No matching families found." };
-    }
-}
 
-    public async static Task<List<User>> LoadUsersFromJson(string filePath)
+    public async static Task<List<User>> LoadUsersFromJson(string UsersJsonUrl)
     {
         try
         {
-            string json = await File.ReadAllTextAsync(filePath);
+            using var httpClient = new HttpClient();
+            string json = await httpClient.GetStringAsync(UsersJsonUrl);
+
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true
             };
+
             var jsonObject = JsonSerializer.Deserialize<Dictionary<string, List<User>>>(json, options);
 
             if (jsonObject != null && jsonObject.ContainsKey("users") && jsonObject["users"] != null)
@@ -71,7 +73,7 @@ public partial class AutismParentMatcher
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error loading JSON: {ex.Message}");
+            Console.WriteLine($"Error loading JSON from URL: {ex.Message}");
             return new List<User>();
         }
     }

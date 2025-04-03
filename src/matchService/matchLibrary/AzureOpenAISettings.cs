@@ -8,4 +8,6 @@ public class AzureOpenAISettings
     public float FrequencyPenalty { get; set; } = 0.0f;
     public float PresencePenalty { get; set; } = 0.0f;
     public int MaxOutputTokenCount { get; set; } = 100;
+    public required string MatchPromptUrl { get; set; }
+    public required string UsersJsonUrl { get; set; }
 }

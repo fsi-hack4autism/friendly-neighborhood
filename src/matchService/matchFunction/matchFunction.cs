@@ -23,7 +23,9 @@ namespace src
                 TopP = float.TryParse(configuration["TopP"], out var topP) ? topP : throw new InvalidOperationException("TopP is missing or invalid in configuration."),
                 FrequencyPenalty = float.TryParse(configuration["FrequencyPenalty"], out var frequencyPenalty) ? frequencyPenalty : throw new InvalidOperationException("FrequencyPenalty is missing or invalid in configuration."),
                 PresencePenalty = float.TryParse(configuration["PresencePenalty"], out var presencePenalty) ? presencePenalty : throw new InvalidOperationException("PresencePenalty is missing or invalid in configuration."),
-                MaxOutputTokenCount = int.TryParse(configuration["MaxOutputTokenCount"], out var maxOutputTokenCount) ? maxOutputTokenCount : throw new InvalidOperationException("MaxOutputTokenCount is missing or invalid in configuration.")
+                MaxOutputTokenCount = int.TryParse(configuration["MaxOutputTokenCount"], out var maxOutputTokenCount) ? maxOutputTokenCount : throw new InvalidOperationException("MaxOutputTokenCount is missing or invalid in configuration."),
+                MatchPromptUrl = configuration["MatchPromptUrl"] ?? throw new InvalidOperationException("MatchPrompt is missing in configuration."),
+                UsersJsonUrl = configuration["UsersJsonUrl"] ?? throw new InvalidOperationException("UsersJsonUrl is missing in configuration."),
             };
 
         }
@@ -41,9 +43,9 @@ namespace src
                 return new BadRequestObjectResult("The 'prompt' query parameter is required.");
             }
 
-            string result = await IntentClassifier.ClassifyIntent(prompt, _openAISettings);
+            string experience = await IntentClassifier.ClassifyIntent(prompt, _openAISettings);
 
-            var matchedUsers = AutismParentMatcher.Match(result);
+            var matchedUsers = AutismParentMatcher.Match(_openAISettings.UsersJsonUrl, experience);
             string jsonResult = JsonSerializer.Serialize(matchedUsers, new JsonSerializerOptions
             {
                 WriteIndented = true // For pretty-printing
