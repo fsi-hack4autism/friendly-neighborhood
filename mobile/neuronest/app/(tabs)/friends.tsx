@@ -17,7 +17,7 @@ const friends: Friend[] = [
     id: '1',
     name: 'Emily Davis',
     lastActive: '2 hours ago',
-    image: 'https://randomuser.me/api/portraits/women/65.jpg',
+    image: 'https://randomuser.me/api/portraits/women/81.jpg',
   },
   {
     id: '2',

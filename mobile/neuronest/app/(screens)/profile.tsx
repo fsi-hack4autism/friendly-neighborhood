@@ -7,7 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 // Sample questionnaire responses - in a real app, these would come from storage/database
 const profileAnswers = {
   name: "Mary Johnson",
-  image: "https://randomuser.me/api/portraits/women/12.jpg",
+  image: "https://randomuser.me/api/portraits/women/65.jpg",
   location: "Seattle, WA",
   memberSince: "January 2024",
   questionsAnswered: [
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: 60,
+    paddingTop: 16,
   },
   header: {
     flexDirection: 'row',

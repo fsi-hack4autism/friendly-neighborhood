@@ -12,3 +12,4 @@
 10. Show app name: NeuroNest on the top of the home page. 
 11. The back button on connect, questionaire, and profile is not elegant. Could you fix the spacing and style of that with respect to the page titles.
 12. Within the friends tab, when the user clicks Message, open a new page with a sample chat interface UI between Mary and the user selected. It should look simple and elegant.
+13. Create a new button called Forum on the home page that matches the style of the other buttons. This button should be redirect to a forum page that has a screen of events related to autism support that people are posting. The event should have a location, date, time, and a visual.There should also be a chat section for each event where people can discuss details. Add 4 events.
