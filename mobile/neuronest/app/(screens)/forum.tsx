@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, Image, FlatList, TouchableOpacity } from 'react-native';
 import { router } from 'expo-router';
 import { Colors } from '../../constants/Colors';
+import { Ionicons } from '@expo/vector-icons';
 
 type Event = {
   id: string;
@@ -53,14 +54,28 @@ const sampleEvents: Event[] = [
 ];
 
 export default function ForumScreen() {
+  const handleBackPress = () => {
+    router.back();
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
-          <Text style={styles.backText}>←</Text>
+        <TouchableOpacity 
+          style={styles.backButton} 
+          onPress={handleBackPress}
+          activeOpacity={0.7}
+        >
+          <Ionicons name="chevron-back" size={24} color={Colors.light.tint} />
         </TouchableOpacity>
         <Text style={styles.title}>Forum</Text>
-        <View style={styles.placeholder} />
+        <TouchableOpacity 
+          style={styles.createButton}
+          onPress={() => router.push('/(screens)/create-event')}
+          activeOpacity={0.7}
+        >
+          <Text style={styles.createButtonText}>+</Text>
+        </TouchableOpacity>
       </View>
 
       <Text style={styles.sectionTitle}>Upcoming Events</Text>
@@ -102,17 +117,24 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: 16,
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
+    paddingTop: 16,
+    paddingBottom: 10,
     marginBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#f0f0f0',
   },
   backButton: {
-    padding: 10,
+    padding: 5,  // Changed from 10 to 5 to match other screens
+    minWidth: 30, // Ensures minimum touch target size
+    minHeight: 30, // Ensures minimum touch target size
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   backText: {
     fontSize: 24,
@@ -122,6 +144,13 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     color: Colors.light.text,
+  },
+  createButton: {
+    padding: 10,
+  },
+  createButtonText: {
+    fontSize: 24,
+    color: Colors.light.tint,
   },
   placeholder: {
     width: 40,
