@@ -39,6 +39,13 @@ export default function HomeScreen() {
         >
           <Text style={styles.buttonText}>Profile</Text>
         </TouchableOpacity>
+        
+        <TouchableOpacity 
+          style={styles.button}
+          onPress={() => handleNavigate('/(screens)/forum')}
+        >
+          <Text style={styles.buttonText}>Forum</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
